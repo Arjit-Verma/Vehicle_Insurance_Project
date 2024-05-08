@@ -29,5 +29,14 @@ npm install {dependency name}
 ## Execution:
  npm run dev
 
-## note: nodemon installation is required for above execution else:
-## use: node index.js
+## note: 
+nodemon installation is required for above execution 
+
+## else use:
+node index.js
+
+## How to see the website locally:
+type this in your browser:
+
+http://localhost:3000/auth
+
