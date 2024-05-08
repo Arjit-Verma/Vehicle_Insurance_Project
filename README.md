@@ -13,8 +13,6 @@ This project is a web application for managing vehicle insurance records.
 2. npm install
 
 ## List of Dependencies:
-## use npm install {dependency name}:
-## Dependencies:
 express
 fs
 body-parser
@@ -23,6 +21,10 @@ pdf-lib
 mysql2/promise
 uuid
 cookie-parser
+
+## use:
+npm install {dependency name}
+
 
 ## Execution:
  npm run dev
