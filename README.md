@@ -10,7 +10,7 @@ This project is a web application for managing vehicle insurance records.
  
 ## Install dependencies:
 
-2. npm install
+2. npm i
 
 ## List of Dependencies:
 express
