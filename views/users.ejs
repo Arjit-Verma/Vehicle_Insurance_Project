@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motor Insurance</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .label {
+        font-weight: bold; /* Example style */
+      }
+
+      .highlight {
+        color: blue; /* Example color */
+      }
+      .name-spacing {
+        margin-left: 20px; /* Adjust as needed */
+      }
+      .accordion-item {
+        margin-bottom: 10px;
+      }
+
+      .accordion-title {
+        font-weight: 540;
+        margin-bottom: 10px;
+      }
+
+      .accordion {
+        max-width: 400px;
+        margin: 5 auto;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f580;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      header {
+        background-color: orangered;
+        color: whitesmoke;
+        padding: 10px 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      header img {
+        width: 50px;
+        height: 40px;
+        margin-right: 20px;
+      }
+
+      .road-divider {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+      }
+
+      .accordion-title:nth-child(odd) {
+        display: flex;
+        align-items: center;
+      }
+
+      .vertical-divider {
+        width: 4px;
+        height: 100%;
+        background-color: black;
+        margin: 0 20px;
+      }
+
+      .accordion-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        padding: 5px 0;
+        text-align: center;
+        margin-top: auto;
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: bottom;
+        margin-top: 20px;
+      }
+
+      .btn-group .btn {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Motor Insurance</h1>
+    </header>
+
+    <h3>Users</h3>
+    <ul>
+      <% users.forEach(user => { %>
+      <li>
+        <span class="label highlight">Customer ID:</span>
+        <span class="user-cust-id"><%= user.Cust_Id %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">First Name:</span>
+        <span class="user-first-name"><%= user.Cust_FName %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Last Name:</span>
+        <span class="user-last-name"><%= user.Cust_LName %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Date of Birth:</span>
+        <span class="user-dob"><%= user.Cust_DOB %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Gender:</span>
+        <span class="user-gender"><%= user.Cust_Gender %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Address:</span>
+        <span class="user-address"><%= user.Cust_Address %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Mobile Number:</span>
+        <span class="user-mobile"><%= user.Cust_MOB_Number %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Email:</span>
+        <span class="user-email"><%= user.Cust_Email %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Passport Number:</span>
+        <span class="user-passport"><%= user.Cust_Passport_Number %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Marital Status:</span>
+        <span class="user-marital"><%= user.Cust_Marital_Status %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">PPS Number:</span>
+        <span class="user-pps"><%= user.Cust_PPS_Number %></span>
+        <span class="field-spacing"></span>
+
+        <span class="label highlight">Tag:</span>
+        <span class="user-tag"><%= user.cust_tag %></span>
+      </li>
+      <% }); %>
+    </ul>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Motor Insurance Company</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

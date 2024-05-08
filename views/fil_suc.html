@@ -1,0 +1,58 @@
+<!-- success.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Page</title>
+    <style>
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .popup-content {
+        text-align: center;
+      }
+
+      .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <p>Success! Your form has been submitted.</p>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Display the pop-up message
+        const popup = document.querySelector(".popup");
+        popup.style.display = "block";
+
+        // Close the pop-up message when close button is clicked
+        const closeBtn = document.querySelector(".close");
+        closeBtn.addEventListener("click", function () {
+          popup.style.display = "none";
+        });
+        setTimeout(() => {
+          window.location.href = "/dashboard";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

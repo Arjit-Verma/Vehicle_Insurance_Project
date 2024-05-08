@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Quote</title>
+    <link rel="stylesheet" href="stliss.css" />
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <header class="header">
+      <h1 class="header-title">INSURANCE QUOTE</h1>
+    </header>
+
+    <div class="container">
+      <h1>Insurance Quote</h1>
+      <form action="#" method="post">
+        <div class="mb-3">
+          <label for="issueDate" class="form-label">Issue Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="issueDate"
+            name="issueDate"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="validFromDate" class="form-label">Valid From Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="validFromDate"
+            name="validFromDate"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="validTillDate" class="form-label">Valid Till Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="validTillDate"
+            name="validTillDate"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description:</label>
+          <textarea
+            class="form-control"
+            id="description"
+            name="description"
+            placeholder="Description"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="coverageLevel" class="form-label">Coverage Level:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="coverageLevel"
+            name="coverageLevel"
+            placeholder="Coverage Level"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <a href="/incident"
+            ><button type="submit" class="btn btn-primary">Incident</button></a
+          >
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text">&copy; 2024 Motor Insurance Company</p>
+    </footer>
+  </body>
+</html>
